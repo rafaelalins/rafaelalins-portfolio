@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo-icon.png">
+    <script src="script.js" defer></script>
+    <title>Rafaela Lins | Portfólio</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo-laranja.png" alt="logo Rafaela Lins" sizes="20px;">
+                </a>
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+        </div><!-- Interface -->
+    </header>
+
+  
+</body>
+</html>
+
+
+    <main>
+        <!-- Welcome Section -->
+        <section id="welcome" class="welcome">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-welcome">
+                        <h1>Explorando soluções, construindo o futuro<span>!</span></h1>
+                        <p>Desenvolvedora web apaixonada por criar soluções inovadoras e páginas criativas. </p>
+                        <button><a href="#contato">Entre em contato</a></button>
+                    </div><!-- Text Welcome -->
+                    <div class="img-welcome">
+                        <img src="img/dev-sentado.png" alt="dev sentado">
+                    </div><!-- Img Welcome -->
+                </div><!-- Flex -->
+            </div><!-- Interface -->
+        </section><!-- Welcome -->
+
+        <!-- Sobre Mim Section -->
+        <section id="sobre-mim" class="sobre-mim">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="img/foto-rafaela-2.jpg" alt="foto-sobre-mim">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span> SOU RAFAELA LINS.</span></h2>
+                        <p>Olá! Sou Rafaela, estudante de Análise e Desenvolvimento de Sistemas, apaixonada por tecnologias e pela criação de soluções práticas e inovadoras. Minha formação em Controle de Tráfego Aéreo fortaleceu minha habilidade de lidar com desafios de forma organizada e assertiva, competências que aplico no desenvolvimento de projetos e no aprendizado contínuo na área de tecnologia.</p>
+                        <p>Fora da programação, gosto de explorar hobbies como leitura, especialmente sobre tecnologia, desenvolvimento pessoal e ficção, além de estudar idiomas como inglês. Amo ensinar e compartilhar conhecimento, seja por meio de aulas ou ajudando em projetos. Música e atividades físicas fazem parte do meu dia a dia, ajudando a manter o equilíbrio e a inspiração.
+                        </p>
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://github.com/rafaelalins"><img src="https://img.icons8.com/ios/50/github--v1.png" alt="github--v1"></a>
+                        <a href="#"><img src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"></a>
+                        <a href="https://www.linkedin.com/in/rafaela-lins-5091262a4/"><img src="https://img.icons8.com/ios/50/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div><!-- Flex -->
+            </div><!-- Interface -->
+        </section><!-- Sobre Mim -->
+
+        <!-- Formação Section -->
+        <section id="formacao" class="formacao">
+            <div class="interface">
+                <h2>Formação<span>.</span></h2>
+                <div class="menu-vertical">
+                    <ul>
+                        <li data-info="Curso Técnico">Curso Técnico</li>
+                        <li data-info="Faculdade">Faculdade</li>
+                        <li data-info="Idiomas">Idiomas</li>
+                    </ul>
+                </div>
+                <div class="texto-explicativo">
+                        <p id="info-text">Clique em uma das opções para ver os detalhes.</p>
+                </div> 
+            </div><!-- Interface -->
+        </section><!-- Formação -->
+        
+        <!-- Portfólio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="interface">
+                <h2>Portfólio<span>.</span></h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <a href="https://rafaelalins.github.io/projeto-renascer/">
+                            <img src="img/portfolio-1-exemplo.png" alt="Projeto 1">
+                        </a>
+                        <div class="portfolio-desc">
+                            <p>Plataforma "Renascer": blog e comunidade para superação do tabagismo. (Fase de protótipo)</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="https://rafaelalins.github.io/to-do---board/">
+                            <img src="img/portfolio-2-exemplo.png" alt="Projeto 2">
+                        </a>
+                        <div class="portfolio-desc">
+                            <p>To-do board (Fase de protótipo)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Portfólio -->
+
+        <!-- Contato Section -->
+        <section id="contato" class="contato">
+            <div class="interface">
+                <h2>Contato<span>.</span></h2>
+                <form action="#" method="post">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section><!-- Contato -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="interface">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <a href="#welcome">
+                            <img src="img/logo-pb.png" alt="Logo Rafaela Lins" width="100px">
+                        </a>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#sobre-mim">Sobre mim</a></li>
+                            <li><a href="#formacao">Formação</a></li>
+                            <li><a href="#portifolio">Portfólio</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://github.com/rafaelalins"><img src="https://img.icons8.com/ios/50/github--v1.png" alt="github--v1"></a>
+                        <a href="#"><img src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                        <a href="https://www.linkedin.com/in/rafaela-lins-5091262a4/"><img src="https://img.icons8.com/ios/50/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Rafaela Lins. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer><!-- Footer -->
+    </main>
+</body>
+</html>

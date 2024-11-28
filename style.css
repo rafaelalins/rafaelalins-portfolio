@@ -1,0 +1,427 @@
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+/* Estilo do Corpo */
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+/* Contêiner Principal */
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo Flexbox */
+.flex {
+    display: flex;
+}
+
+/* Estilo do Botão */
+button {
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color: #F58A08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+/* Estilo do Menu */
+header {
+    padding: 40px 4px;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15vh;
+}
+
+header a img {
+    flex: 1;
+    max-width: 500px;
+}
+
+header nav {
+    flex: 1;
+}
+
+header nav ul {
+    display: flex;
+    justify-self: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+}
+
+header nav a {
+    display: inline-block;
+    list-style: none;
+    color: rgb(177, 177, 177);
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: white;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Seção WELCOME */
+.welcome {
+    padding: 40px 4% 80px 4%;
+}
+
+.welcome .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.welcome .txt-welcome {
+    width: 50%;
+}
+
+.welcome .txt-welcome h1 {
+    color: white;
+    font-size: 45px;
+    margin: 40px, 0;
+}
+
+.welcome .txt-welcome h1 span {
+    color: #F58A08;
+}
+
+.welcome .txt-welcome p {
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 40px 0px;
+}
+
+.welcome button a {
+    text-decoration: none;
+    color: black;
+}
+
+.welcome .img-welcome {
+    width: 450px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* Animação Flutuar */
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* Seção SOBRE MIM */
+section.sobre-mim {
+    padding: 50px 4%;
+}
+
+section.sobre-mim .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre-mim .txt-sobre h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre-mim .txt-sobre h2 span {
+    display: block;
+    color: #F58A08;
+}
+
+.sobre-mim img {
+    max-width: 400px;
+}
+
+.sobre-mim .txt-sobre p {
+    color: white;
+    font-size: 18px;
+    margin: 20px 0%;
+    text-align: justify;
+}
+
+.sobre-mim .btn-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 170px;
+    background-color: #F58A08;
+}
+
+.sobre-mim .btn-social a:hover img {
+    transform: scale(1.1);
+}
+
+/* Seção FORMAÇÃO */
+.formacao {
+    padding: 100px 4%;
+    display: flex;
+}
+
+.formacao h2 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    margin: 20px;
+}
+
+.formacao h2 span {
+    color: #F58A08;
+}
+
+/* Menu Vertical */
+.menu-vertical {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.menu-vertical ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-vertical li {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-bottom: 1px solid #555;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.menu-vertical li:hover {
+    background-color: #F58A08;
+}
+
+.texto-explicativo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    max-width: 400px;
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+}
+
+/* Seção PORTFOLIO */
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio h2 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.portfolio h2 span {
+    color: #F58A08;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-desc {
+    transform: translateY(0);
+}
+
+/* Seção CONTATO */
+.contato {
+    padding: 50px 0;
+    background-color: black;
+}
+
+.contato h2 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.contato h2 span {
+    color: #F58A08;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato label {
+    font-size: 1.1em;
+    color: white;
+}
+
+.contato input,
+.contato textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contato button {
+    background-color: #F58A08;
+    color: white;
+    padding: 10px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato button:hover {
+    background-color: #cd7408;
+}
+
+/* Rodapé */
+footer {
+    background-color: #F58A08;
+    color: white;
+    padding: 40px 4%;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+footer .footer-logo img {
+    max-width: 120px;
+}
+
+footer .footer-links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+footer .footer-links a:hover {
+    color: black;
+}
+
+footer .footer-social a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer .footer-social img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+footer .footer-social a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+
+
+
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .footer-social {
+        margin-top: 20px;
+    }
+}
